@@ -1,0 +1,21 @@
+{
+  "name": "angular-webpack-template",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "mariano.furriel <mariano.furriel@fdvsolutions.com>"
+  ],
+  "license": "BSD-2-Clause",
+  "homepage": "https://github.com/jean-rakotozafy/angular-webpack-template",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-ace": "^0.2.3",
+    "ace": "^1.2.4"
+  }
+}

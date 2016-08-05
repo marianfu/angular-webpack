@@ -1,0 +1,19 @@
+<html ng-app="myApp">
+  <head>
+    <title>Angular Webpack template</title>
+    <style>
+		.editor { 
+			height: 200px;
+		}
+	</style>
+  </head>
+  <body ng-controller="mainCtrl">
+Full Name: {{firstName + " " + lastName}}
+
+	<div class="editor" ui-ace="{ mode: 'javascript', theme: 'monokai' }" ng-model="code"></div>
+
+    <script src="browser-bundle.js"></script>
+	<script type="text/javascript" src="bower_components/ace-builds/src-min-noconflict/ace.js"></script>
+	<script type="text/javascript" src="bower_components/angular-ui-ace/ui-ace.js"></script>
+  </body>
+</html>
