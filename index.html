@@ -4,6 +4,11 @@
     <style>
 		.editor { 
 			height: 200px;
+			width: 50%;
+		}
+		.editor2 { 
+			height: 200px;
+			width: 50%;
 		}
 	</style>
   </head>
@@ -11,6 +16,7 @@
 Full Name: {{firstName + " " + lastName}}
 
 	<div class="editor" ui-ace="{ mode: 'javascript', theme: 'monokai' }" ng-model="code"></div>
+	<div class="editor2" ui-ace="{ mode: 'javascript', theme: 'monokai' }" ng-model="code"></div>
 
     <script src="browser-bundle.js"></script>
 	<script type="text/javascript" src="bower_components/ace-builds/src-min-noconflict/ace.js"></script>
