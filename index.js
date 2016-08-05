@@ -12,6 +12,6 @@ myApp.controller("controller", ["$scope", function($scope) {
 		$scope.change = function() {
 			var str = Parser.parse($scope.code);
 			if(str != null)
-				$scope.code2 = JSON.stringify(str);
+				$scope.code2 = JSON.stringify(str, null, '\t');
 		};
 }]);
