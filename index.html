@@ -1,27 +1,20 @@
 <html ng-app="myApp">
   <head>
     <title>Angular Webpack template</title>
-    <style>
-		.editor { 
-			height: 50%;
-			width: 50%;
-		}
-		.editor2 { 
-			height: 50%;
-			width: 50%;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="app/styles/style.css">
   </head>
-  <body ng-controller="mainCtrl">
-	Full Name: {{firstName + " " + lastName}}
+  <body>
 
 <div ng-controller="controller">
 	<div class="editor" ui-ace="{ mode: 'javascript', theme: 'monokai' }" ng-model="code" ng-change="change()"></div>
 	<hr>
+	<div class="editor3" ui-ace="{ mode: 'javascript', theme: 'monokai' }" ng-model="code3"></div>
+	<hr>
 	<div class="editor2" ui-ace="{ mode: 'javascript', theme: 'monokai' }" ng-model="code2"></div>
+
+
 <div>
-	<script src="node_modules/escodegen/escodegen.js"></script>
-    <script src="browser-bundle.js"></script>
+    <script src="dist/bundle.js"></script>
 	<script type="text/javascript" src="bower_components/ace-builds/src-min-noconflict/ace.js"></script>
 	<script type="text/javascript" src="bower_components/angular-ui-ace/ui-ace.js"></script>
   </body>

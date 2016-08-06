@@ -14,9 +14,14 @@
     "angular-ui-ace": "^0.2.3",
     "envify": "^1.2.0",
     "escodegen": "^1.8.0",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
     "jquery": "^2.1.1"
   },
   "devDependencies": {
+    "gulp-connect": "^5.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-watch": "^4.3.9",
     "webpack": "^1.4.13"
   }
 }
