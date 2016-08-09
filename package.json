@@ -20,8 +20,11 @@
   },
   "devDependencies": {
     "gulp-connect": "^5.0.0",
+    "gulp-if": "^2.0.1",
     "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
     "gulp-watch": "^4.3.9",
-    "webpack": "^1.4.13"
+    "webpack": "^1.4.13",
+    "yargs": "^4.8.1"
   }
 }

@@ -5,8 +5,10 @@
 .editor2 { 
 	height: 50%;
 	width: 50%;
+	float: right;
 }
 .editor3 { 
 	height: 50%;
 	width: 50%;
+	float: left;
 }
