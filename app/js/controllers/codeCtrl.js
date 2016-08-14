@@ -1,5 +1,4 @@
-var Parser = require('../parser');
-var Escodegen = require('escodegen');
+var pseudo = require('pseudo-js');
 
 module.exports = function($scope) {
 		$scope.code = "";
@@ -7,12 +6,13 @@ module.exports = function($scope) {
 		$scope.code3 = "";
 
 		$scope.change = function() {
-			var str = Parser.parse($scope.code);
-			var str2 = Escodegen.generate(str);
-			$scope.code3 = JSON.stringify(str, null, '\t');
+			var syntaxTree = pseudo.parseToSyntaxTree($scope.code);
+			var code = pseudo.parseToJS($scope.code);
+
+			$scope.code3 = JSON.stringify(syntaxTree, null, '\t');
 			
-			if(str2 != null){
-				$scope.code2 = str2;
+			if(code != null){
+				$scope.code2 = code;
 			}
 		};
 }
