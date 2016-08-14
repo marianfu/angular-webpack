@@ -8,7 +8,7 @@ var gulpif = require('gulp-if');
 var argv = require('yargs').argv;
  
 gulp.task('bundle', function() {
-    gulp.src('./app/main.js')
+    gulp.src('./app/app.js')
         .pipe(browserify({
           insertGlobals : false,
           debug : true

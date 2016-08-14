@@ -4,21 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --progress --colors --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Mariano Furriel",
   "license": "BSD-2-Clause",
   "dependencies": {
     "angular": "^1.3",
     "angular-ui-ace": "^0.2.3",
     "envify": "^1.2.0",
     "gulp": "^3.9.1",
-    "gulp-browserify": "^0.5.1",
     "jquery": "^2.1.1",
     "pseudo-js": "0.0.1"
   },
   "devDependencies": {
+    "gulp-browserify": "^0.5.1",
     "gulp-connect": "^5.0.0",
     "gulp-if": "^2.0.1",
     "gulp-rename": "^1.2.2",
